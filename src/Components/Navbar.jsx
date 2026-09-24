@@ -6,13 +6,12 @@ function Navbar({ theme, themeColors, onToggleTheme, title }) {
       
       {/* Logo / Judul di Navbar */}
       <div
-        className="border-2 border-black bg-white p-1 shadow-[3px_3px_0px_0px_rgba(0,1,1,1)] transform -rotate-1"
+        className="border-2 border-black px-3 py-1 shadow-[3px_3px_0px_0px_rgba(0,1,1,1)] transform -rotate-1"
+        style={{ backgroundColor: themeColors.badge }}
       >
-        <img
-          src="/logo.jpeg"
-          alt={title || "Comic Quiz"}
-          className="h-10 w-auto object-contain md:h-12"
-        />
+        <span className="font-black text-lg md:text-xl uppercase tracking-wider">
+          {title || "COMIC QUIZ"}
+        </span>
       </div>
 
       {/* Theme control */}
